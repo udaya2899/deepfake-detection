@@ -1,8 +1,11 @@
-FROM PYTHON:2.7-alpine
+FROM python:2.7
 
-COPY . /app
-WORKDIR /app
+WORKDIR /usr/src/app
 
-RUN pip install -r requirements.txt
+COPY requirements.txt ./
+RUN pip install cmake
+RUN pip install -r requirements.txt -vvv
 
-CMD ["python", "demo.py", "--input-dir=demo"]
+COPY . .
+
+CMD ["python", "./demo.py", "--input_dir=demo"]
