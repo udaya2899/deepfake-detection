@@ -3,4 +3,4 @@ pyyaml
 easydict==1.7
 matplotlib==1.5.3
 dlib==19.16.0
-opencv-python==3.4.0.12
+opencv-python==3.4.7.28
