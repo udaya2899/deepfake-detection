@@ -1,4 +1,4 @@
-tensorflow==1.15.4
+tensorflow==2.5.3
 pyyaml
 easydict==1.7
 matplotlib==1.5.3
